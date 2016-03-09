@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+	   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta http-equiv="cleartype" content="on">
+        <meta name="MobileOptimized" content="320">
+        <meta name="HandheldFriendly" content="True">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+       <title>Weston Richardson</title>
+       <link rel="stylesheet" href="css/style.css"/>
+       <link rel="stylesheet" href="css/responsive.css"/>
+	   <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+       <script type="text/javascript" src="js/slideout.min.js"></script>
+  </head>
+  <body>
+      <div id="fb-root"></div>
+        <script>
+        (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.5";
+        fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+    </script>    
+    <nav id="menu">
+      <h2>Share</h2>
+      <ul>
+        <li><div class="fb-share-button" data-href="http://therichardsonfamily.info/Weston/" data-layout="button"></div></li>
+        <li><a href="https://twitter.com/share" class="twitter-share-button">Tweet</a> <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script></li>
+        <li><script src="//platform.linkedin.com/in.js" type="text/javascript"> lang: en_US</script>
+        <script type="IN/Share"></script></li>
+      </ul>
+    </nav>
+    <main id="panel">
+      <header id="header">
+        <button class="toggle-button">☰</button>
+            <div class="content">
+                <div id="banner">Hey I'm Weston Richardson !</div>
+            </div>
+      </header>
+        <!----- SLIDES START --->   	
+            <div id="slide0" class="slide">
+                <div class="content" >
+                </div> 
+            </div> 
+            <div id="slide1" class="slide">
+                <div class="content">
+                    <div class="left">
+                        <img src="img/Grad-Headshot.jpg" />
+                    </div>
+                    <div class="right">
+                        <br />
+                        <p>I just graduated in December 2015 from Winthrop University with a Bachelor of Science degree in Digital Information Design, and specializing in web applications.   As a part of my job search I've created this site to help convey my skillset, and to provide prospective employers a glimpse into who I am as a person.</p>
+                        <p>On this website, I'll provide links to pages where I utilize different technologies and approaches.  The code will be stored on GitHub for review if someone is interested.  I'll also share my resume which documents college classwork and projects.</p>
+                        <p>I enjoy developing web applications, but I probably enjoy being a team member working on group projects rather than doing programming alone.  I like the comradarie when team members are all contributing to a common goal.</p>
+                        <p>So I hope you find my site acceptable as a demonstration of a new college graduate's capabilities. ~ ~ ~</p>
+                    </div>
+                </div> 
+            </div> 
+            <div id="slide2" class="slide">
+                <div class="content" >
+                </div> 
+            </div> 
+            <div id="slide3" class="slide">
+                <div class="content" >
+                    <div class="left">
+                        <p>My mother has recently been experimenting with home-made hummus recipes. Everyone seems to like them, well most of them anyway ;-)  My dad started talking about sharing them online, and we got the idea for a website.</p>
+                        <p>I decided to develop the "Home-made Hummus" site using tools that I had never been exposed to in order to learn something new and help my job search.  I chose Ruby-on-Rails and MySQL because it seems to power several well known websites like Twitter, Github, Hulu, and BaseCamp.</p>
+                        <p>So check out the site and see what you think ... <a href="hummus/">Home-made Humus</a>.</p>
+                    </div>
+                    <div class="right">
+                        <img src="img/hummus.JPG" />
+                    </div>
+                </div> 
+            </div> 
+            <div id="slide4" class="slide">
+                <div class="content" >
+                </div> 
+            </div> 
+            <div id="slide5" class="slide">
+                <div class="content" >
+                    <div class="center">
+                        <p>I developed my first website in the summer of 2012, right after finishing studies at Greenville Technical College. The website was just a way to show a collection of programming techniques I learned while there.  The site still exist, but is very rudimentary compared to my capabilities today.  Still, I'll link to it below just to show some other programming that I've done previously.</p> 
+                        <a href="WestonsMusings/Website/wblogger.htm">Weston's Musings</a>
+                    </div>
+                </div> 
+            </div> 
+            <!----- SLIDES END --->
+    </main>
+    <script>
+      var slideout = new Slideout({
+        'panel': document.getElementById('panel'),
+        'menu': document.getElementById('menu'),
+        'padding': 256,
+        'tolerance': 70
+      });
+
+      // Toggle button
+      document.querySelector('.toggle-button').addEventListener('click', function() {
+        slideout.toggle();
+      });
+   
+       <!----- JQUERY FOR SLIDING NAVIGATION --->   
+        $(document).ready(function() {
+          $('a[href*=#]').each(function() {
+            if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
+            && location.hostname == this.hostname
+            && this.hash.replace(/#/,'') ) {
+              var $targetId = $(this.hash), $targetAnchor = $('[name=' + this.hash.slice(1) +']');
+              var $target = $targetId.length ? $targetId : $targetAnchor.length ? $targetAnchor : false;
+               if ($target) {
+                 var targetOffset = $target.offset().top;
+              }
+            }
+          });
+        });
+    </script>
+  </body>
+</html>
