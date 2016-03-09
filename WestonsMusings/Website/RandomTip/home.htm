@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<!-- 
+   New Perspectives on JavaScript, 2nd Edition
+   Tutorial 2
+   Case Problem 2
+
+   The Home Center
+   Author: Weston Richardson
+   Date:   May 30, 2011
+
+   Filename:         home.htm
+   Supporting files: logo.jpg, random.js, styles.css, tips.js, work.jpg
+-->
+   <title>The Home Center</title>
+   <link href="styles.css" rel="stylesheet" type="text/css" />
+
+<!--
+The following script elements allow this program access to the tips.js and the random.js files.
+-->
+   <script type="text/javascript" src="tips.js"> </script>
+   <script type="text/javascript" src="random.js"> </script>
+
+</head>
+
+<body>
+<noscript> JavaScript is required for The Home Center project.</noscript>
+
+
+<div id="links">
+  <img src="logo.jpg" alt="the Home Center" />
+  
+</div>
+
+<div id="main">
+   <div id="tip">
+<!--
+The following document.write statements create the HTML code need to make the random tip portion of the webpage, state the title of the tip and the tip itself.
+-->
+<script type="text/javascript">
+
+      var tipNum = randInt(1, 10)
+
+	document.write("<h1>Random Tip<br />")
+	document.write(tipTitle(tipNum))
+	document.write("</h1>")
+	document.write("<p>")
+	document.write(tipText(tipNum))
+	document.write("</p>")
+
+</script>
+   </div>
+
+   <p>This is a sample XHMTL program using Javascript and CSS that displays a Random Tip every time the page loads.  
+	  Reload the page several times, and the tip should change as a new random image number is picked.</p>
+	<br/>
+	<p> Click the browser Back button to return to Musings.</p>
+
+</div>
+
+</body>
+</html>

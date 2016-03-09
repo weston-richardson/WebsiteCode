@@ -1,0 +1,189 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+  <html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Column Formatting</title>
+
+<!-- 
+Tutorial 7, Case Problem 3
+Your Name:	Weston Richardson
+Today's Date:	Oct. 21, 2011
+Filename: lananew.htm
+-->
+
+<style type="text/css">
+
+@import url(navbar.css);
+
+body {
+	font-size: 1.1em;
+	font-family: Shruti, sans-serif;
+	background-color: #0d4a2c; 
+	line-height: 1.25;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+#container {
+	width: 90%;
+	margin-top: 0;
+	margin-bottom: 0;
+	margin-left: auto;
+	margin-right: auto;
+	border-width: 1px;
+	background-color: #c2efd8;
+}
+
+#header {
+	background-color: white;
+}
+
+
+
+#left {
+	width: 50%;
+	padding: 0.5%;
+	float: left;
+}
+#left h1 {
+	margin-bottom: 0.5em;
+	font-family: Magneto, serif;
+	text-align: center;
+}
+
+#left p, #middle p {
+	margin-bottom: 1em;
+	text-indent: 1em;
+}
+
+#middle {
+	width: 23%;
+	border-left: solid thin black;
+	border-right: solid thin black;
+	padding: 0.5%;
+	float: left;
+}
+
+#right {
+	width: 23%;
+	padding: 0.5%;
+	color: white;
+	background-color: green;
+	float: right;
+}
+
+#right ul li {
+	margin-left: 1em;
+	padding-top: 0;
+	list-style-type: square;
+	list-style-position: inside;
+}
+
+#right ol li {
+	margin-top: 1em;
+	margin-bottom: 1em;
+	margin-left: 0; 
+	margin-right: 0;
+}
+
+#footer {
+	margin-top: 1em;
+	border-top: solid thick green;
+	clear: both;
+	font-weight: bold;
+	text-align: center;
+}
+
+h2 {
+	margin-bottom: 0.5em;
+	font-family: Magneto, serif;
+	text-align: center;
+}
+
+h3 {
+	margin-bottom: 0.5em;
+	border-top: solid thin black;
+	border-bottom: solid thick black;
+	color: #68964c;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+img {
+	margin-top: 0;
+	margin-bottom: 0;
+	margin-left: auto;
+	margin-right: auto;
+	border: solid thick black;
+	display: block;
+}
+
+
+
+</style>
+
+</head>
+
+<body>
+
+<div id="container">
+
+<div id="header">
+This is a simple HTML program that demonstrates use of multiple columns with individual formatting. <br/>  
+Click the browser Back button to return to Musings. <br/>
+   <br/>
+
+</div> <!-- end header -->
+
+<div id="navbar">
+</div> <!-- end navbar -->
+
+<div id="left">
+<h1>Main content message goes here !</h1>
+
+</div> <!-- end left column -->
+
+<div id="middle">
+
+<h3>Short Message #1</h3>
+<p>                          
+</p>
+<h3>Short Message #2</h3>
+<p>
+</p>
+<h3>Short Message #3</h3>
+<p>
+</P>
+<h3>Short Message #4</h3>
+<p>
+</p>
+<h3>Short Message #5</h3>
+<p>
+</p>
+</div> <!-- end middle column -->
+
+<div id="right">
+<h2>Highlight Content</h2>
+<p><strong>Use a list: </strong></p>
+<ul>
+  <li>Item #1</li>
+  <li>Item #2</li>
+  <li>Item #3</li>
+  <li>Item #4</li>
+  <li>Item #5</li>
+  <li>Item #6</li>
+</ul>
+
+</div> <!-- end right column -->
+
+<div id="footer">
+<p>Footer #1 &#10043; Footer #2 &#10043; Footer #3</p>
+</div> <!-- end footer -->
+
+</div> <!-- end container -->
+
+</body>
+</html>
