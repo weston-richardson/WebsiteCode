@@ -5,6 +5,11 @@ body{
     height: 100%;
 }
 
+p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 0.9em;
+}
+
 /* Styling for Slideout Menu */
     .slideout-menu {
         position: fixed;
@@ -45,14 +50,13 @@ h2 {
    text-align: center;
    color: #000;
    margin: 0;
-	padding: 0;
+   padding: 0;
 }
 
 ul {
   list-style: none;
 }
 
-.center { margin: 0 auto; }
 .content{ margin: 0 auto; width: 960px; }
 
 #header { 
@@ -180,7 +184,24 @@ ul {
     background-color: #7887AB;
 }
 
+/* Styling for Share Buttons */
+
 #resume-btn {
     background-color: #000;
     color: #fff
 }
+
+.fb-share-button {
+  height: 15px;
+  float: left;
+  background-position-y: -251px;
+  background-position-x: -1px;
+  border-bottom: 1px solid #1a356e;
+   }
+ .fb-share-button_Text {
+  font-size: 8px ;
+  height: 9px;
+    }
+.fb_share_count .fb_share_count_right {
+float: left;
+ }

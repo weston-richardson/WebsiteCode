@@ -16,6 +16,10 @@
 	  margin-left: auto;
 	  margin-right: auto;
 	}
+    
+    #panel {
+        width: 640px;
+    }
 }
 
 /* iPhone 6 ----------- */
@@ -36,6 +40,10 @@
         background-position: 0%;
         background-position-y: 1825px;
         background-size: 100%; 
+    }
+    
+    #panel {
+        width: 375px;
     }
 }
 
@@ -66,6 +74,10 @@
 	  margin-left: auto;
 	  margin-right: auto;
 	}
+    
+    #panel {
+        width: 360px;
+    }
 }
 
 @media only screen and (min-device-width: 360px) and (max-device-height: 640px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 3){

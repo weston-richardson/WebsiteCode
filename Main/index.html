@@ -11,7 +11,7 @@
        <link rel="stylesheet" href="css/style.css"/>
        <link rel="stylesheet" href="css/responsive.css"/>
 	   <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
-       <script type="text/javascript" src="js/slideout.min.js"></script>
+       <script type="text/javascript" src="js/slideout.js"></script>
   </head>
   <body>
       <!-- Code for Facebook Sharing -->
@@ -29,16 +29,17 @@
     <nav id="menu">
       <ul>
         <!-- Facebook Share Button -->
-        <li><div class="fb-share-button" data-href="http://therichardsonfamily.info/Weston/" data-layout="button"></div></li>
-        <br />
+        <li><div class="fb-share-button" data-href="http://therichardsonfamily.info/Weston/" data-layout="button"></div></li><br />
+        <li></li><br /><br />
         <!-- Twitter Share Button -->
-        <li><a href="https://twitter.com/share" class="twitter-share-button">Tweet</a> <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script></li>
-        <br />
+        <li><a href="https://twitter.com/share" class="twitter-share-button">Tweet</a> <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script></li><br />
+        <li></li><br />
         <!-- LinkedIn Share Button -->
         <li><script src="//platform.linkedin.com/in.js" type="text/javascript"> lang: en_US</script>
-        <script type="IN/Share"></script></li>
-        <br />
-        <li><a href="WestonRichardson-Resume1.pdf"><button id="resume-btn" >Resume</button></a></li>
+        <script type="IN/Share" class="button"></script></li><br />
+        <li></li><br />
+        <!-- Resume Button -->
+        <li><a href="WestonRichardson-Resume1.pdf"><button id="resume-btn">Resume</button></a></li>
       </ul>
     </nav>
     <!-- Main Area of Site -->
@@ -101,11 +102,12 @@
                     </div>
                     <div class="right">
                         <p>I developed my first website in the summer of 2012, after finishing studies at Greenville Technical College. The website showcased a collection of programming techniques I learned while there.  The site still exists, but is very rudimentary compared to my capabilities today.  Still, I'll link to it below to show some other programming that I've done previously.</p> 
-                        <a href="WestonsMusings/Website/wblogger.htm">Weston's Musings</a>
+                        <p><a href="WestonsMusings/Website/wblogger.htm">Weston's Musings</a></p>
                     </div>
                 </div> 
             </div> 
             <div id="slide6" class="slide">
+                <button class="toggle-button2">Share</button>
             </div>
             <!-- End of Slide Section -->
     </main>
@@ -120,6 +122,9 @@
 
       // Toggle button
       document.querySelector('.toggle-button').addEventListener('click', function() {
+        slideout.toggle();
+      });
+      document.querySelector('.toggle-button2').addEventListener('click', function() {
         slideout.toggle();
       });
    
