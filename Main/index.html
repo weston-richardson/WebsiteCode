@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
   <head>
 	   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -9,12 +9,13 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
        <title>Weston Richardson</title>
        <link rel="stylesheet" href="css/style.css"/>
+       <link rel="stylesheet" href="css/grid.css"/>
        <link rel="stylesheet" href="css/responsive.css"/>
 	   <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
        <script type="text/javascript" src="js/slideout.js"></script>
   </head>
-  <body>
-      <!-- Code for Facebook Sharing -->
+<body>
+<!-- Code for Facebook Sharing -->
       <div id="fb-root"></div>
         <script>
         (function(d, s, id) {
@@ -24,93 +25,166 @@
         js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.5";
         fjs.parentNode.insertBefore(js, fjs);
         }(document, 'script', 'facebook-jssdk'));
-    </script>    
-    <!-- Slideout Menu -->
-    <nav id="menu">
-      <ul>
-        <!-- Facebook Share Button -->
+    </script>   
+<!-- Slideout Menu -->
+<nav id="menu">
+<ul>
+   <!-- Resume Button -->
+        <li><a href="WestonRichardson-Resume1.pdf"><button id="resume-btn">Resume</button></a></li><br />
+        <li></li><br />
+  <!-- Facebook Share Button -->
         <li><div class="fb-share-button" data-href="http://therichardsonfamily.info/Weston/" data-layout="button"></div></li><br />
         <li></li><br /><br />
-        <!-- Twitter Share Button -->
+  <!-- Twitter Share Button -->
         <li><a href="https://twitter.com/share" class="twitter-share-button">Tweet</a> <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script></li><br />
         <li></li><br />
-        <!-- LinkedIn Share Button -->
+  <!-- LinkedIn Share Button -->
         <li><script src="//platform.linkedin.com/in.js" type="text/javascript"> lang: en_US</script>
-        <script type="IN/Share" class="button"></script></li><br />
-        <li></li><br />
-        <!-- Resume Button -->
-        <li><a href="WestonRichardson-Resume1.pdf"><button id="resume-btn">Resume</button></a></li>
-      </ul>
-    </nav>
+        <script type="IN/Share" class="button"></script></li>
+</ul>
+</div>  
+</nav>
     <!-- Main Area of Site -->
-    <main id="panel">
-        <button class="toggle-button">Share</button>
-      <header id="header">
-            <div class="content">
-                <div id="banner">Hey I'm Weston Richardson !</div>
-            </div>
-      </header>
-        <!-- Start of Slide Section -->   	
-            <div id="slide0" class="slide">
-                <div class="content" >
-                </div> 
-            </div> 
+ <main id="panel">
+  <div class="grid">
+     <div id="site-content" role="main">
+	  <button class="toggle-button">Menu Toggle</button>
+      <header class="row">
+			<h1 class="c12"> <div id="banner">Hey, I'm Weston Richardson !</h1> 
+			<h1 class="c12"> <div id="banner">  </h1> 
+	  </header>
+        <!-- Start of Slides Section --> 
+        	<div class="row">
+			  	<div class="c12" align="left"> 
+			  	</div>
+	            <div id="slide0">
+	                <div class="content" class="slide">
+	                </div> 
+	            </div> 
+	        </div>   
             <!-- Intro Content -->
-            <div id="slide1" class="slide">
-                <div class="content">
-                    <div class="left">
+            <div class="row">
+              <div id="slide1" class="slide">   
+            	<div class="c1" align="left"> 
+                </div>
+				<div class="c4" align="center"> 
                         <img src="img/Grad-Headshot.jpg" />
-                    </div>
-                    <div class="right">
-                        <br />
-                        <p>I just graduated in December 2015 from Winthrop University with a Bachelor of Science degree in Digital Information Design, and specializing in web applications.   As a part of my job search I've created this site to help convey my skill set, and to provide prospective employers a glimpse into who I am as a person.</p>
-                        <p>On this website, I'll provide links to pages where I utilize different technologies and approaches.  The code will be stored on GitHub for review if someone is interested.  I'll also share my resume which documents college classwork and projects.</p>
-                        <p>I enjoy developing web applications, but I probably enjoy being a team member working on group projects rather than doing programming alone.  I like the camaraderie when team members are all contributing to a common goal.</p>
-                        <p>So I hope you find my site acceptable as a demonstration of a new college graduate's capabilities. This page uses parallax scrolling and I'm currently working on implementing responsive design techniques with HTML, CSS, and jQuery.</p>
-                    </div>
-                </div> 
-            </div> 
-            <!-- First Background Image -->
-            <div id="slide2" class="slide">
-                <div class="content" >
-                </div> 
-            </div> 
-            <!-- Hummus Content -->
-            <div id="slide3" class="slide">
-                <div class="content" >
-                    <div class="left">
-                        <p>My mother has recently been experimenting with homemade hummus recipes. Everyone seems to like them, well most of them anyway ;-)  My dad started talking about sharing them online, and we got the idea for a website.</p>
-                        <p>I decided to develop the "Homemade Hummus" site using tools that I have not been exposed to in order to learn something new and help my job search.  I chose Ruby-on-Rails and MySQL because it seems to power several well known websites like Twitter, Github, Hulu, and BaseCamp.</p>
-                        <p>Ruby-on-Rails is an MVC framework that does a lot of work for a developer, especially with database interaction.</p>
-                        <p>As of early March 2016, the site is still under development.  But I expect to have the link for <strong>Homemade Hummus</strong> live before April. My working code is on Github during development.</p>
-                    </div>
-                    <div class="right">
-                        <img src="img/hummus.JPG" />
-                    </div>
-                </div> 
-            </div> 
-            <!-- Second Background Image -->
-            <div id="slide4" class="slide">
-                <div class="content" >
-                </div> 
-            </div> 
-            <!-- Past Content -->
-            <div id="slide5" class="slide">
-                <div class="content" >
-                    <div class="left">
-                        <img src="img/Gtech.jpg" />
-                    </div>
-                    <div class="right">
-                        <p>I developed my first website in the summer of 2012, after finishing studies at Greenville Technical College. The website showcased a collection of programming techniques I learned while there.  The site still exists, but is very rudimentary compared to my capabilities today.  Still, I'll link to it below to show some other programming that I've done previously.</p> 
-                        <p><a href="WestonsMusings/Website/wblogger.htm">Weston's Musings</a></p>
-                    </div>
-                </div> 
-            </div> 
-            <div id="slide6" class="slide">
-                <button class="toggle-button2">Share</button>
+                </div>
+                <div class="c2" align="center"> 
+                </div>
+				<div class="c5" align="left"> 
+         <div class="righttext">              <p>I just graduated in December 2015 from Winthrop University with a Bachelor of Science degree 
+                        	in Digital Information Design, and specializing in web applications.   As a part of my job 
+                        	search I've created this site to help convey my skill set, and to provide prospective employers 
+                        	a glimpse into who I am as a person.</p>
+                        <p>On this website, I'll provide links to pages where I utilize different technologies and approaches.  
+                        	The code will be stored on GitHub for review if someone is interested.  I'll also share my resume 
+                        	which documents college classwork and projects.</p>
+                        <p>I enjoy developing web applications, but I probably enjoy being a team member working on group 
+                        	projects rather than doing programming alone.  I like the camaraderie when team members are all 
+                        	contributing to a common goal.</p>
+                        <p>So I hope you find my site acceptable as a demonstration of a new college graduate's capabilities. 
+                        	This page uses parallax scrolling and I'm currently working on implementing responsive design 
+                        	techniques with HTML, CSS, and jQuery.</p>
+                        <p>  </p>
+              </div>      
+                </div>
+                <div class="c1" align="left"> 
+                </div>
+              </div> 
             </div>
-            <!-- End of Slide Section -->
-    </main>
+            <!-- Buffer1 -->
+            <div class="row">
+			  	<p class="c12" align="left"> </p>
+	            <div id="buffer1">
+	                <div class="content" class="slide">
+	                </div> 
+	            </div> 
+	        </div>
+            <!-- First Background Image -->
+            <div class="row">
+			  	<p class="c12" align="left"> </p>
+	            <div id="slide2">
+	                <div class="content" class="slide">
+	                </div> 
+	            </div> 
+	        </div>
+            <!-- Hummus Content -->
+            <div class="row">
+              <div id="slide3" class="slide"> 
+            	<div class="content"> 
+            	</div> 
+				<div class="c5" align="right"> 
+                    <div class="lefttext">
+					<p>My mother has recently been experimenting with homemade hummus recipes. Everyone seems to like them, 
+                        well most of them anyway ;-)  My dad started talking about sharing them online, and we got the idea
+                         for a website.</p>
+                    <p>I decided to develop the "Homemade Hummus" site using tools that I have not been exposed to in order 
+                        to learn something new and help my job search.  I chose Ruby-on-Rails and MySQL because it seems to
+                         power several well known websites like Twitter, Github, Hulu, and BaseCamp.</p>
+                    <p>Ruby-on-Rails is an MVC framework that does a lot of work for a developer, especially with database 
+                        interaction.</p>
+                    <p>As of early March 2016, the site is still under development.  But I expect to have the link for 
+                        <strong>Homemade Hummus</strong> live before April. My working code is on Github during development.</p>
+                    </div>
+                 </div>
+                 <div class="c1" align="left"> 
+            	 </div>
+			   	<div class="c5" align="left"> 
+                    	<img src="img/hummus.JPG" />
+                </div> 
+				<div class="c1"> </div>
+               </div> 
+            </div>
+            <!-- Buffer2 -->
+            <div class="row">
+			  	<p class="c12" align="left"> </p>
+	            <div id="buffer2">
+	                <div class="content" class="slide">
+	                </div> 
+	            </div> 
+	        </div>
+            <!-- Second Background Image -->
+            <div class="row">
+			  	<p class="c12" align="left"> </p>
+	            <div id="slide4">
+	                <div class="content" class="slide">
+	                </div> 
+	            </div> 
+	        </div>
+            <!-- Past Content -->
+            <div class="row">
+              <div id="slide5" class="slide"> 
+            	 <div class="content"> 
+             	 </div> 
+				 <div class="c5" align="center"> 
+                       <img src="img/Gtech.jpg" />
+                 </div>
+			  	 <div class="c1"> 
+				 </div>
+				 <div class="c5" align="center"> 
+	            <div class="right text">			 	    
+					    <p> I developed my first website in the summer of 2012, after finishing studies at 
+					    	Greenville Technical College.website in the summer of 2012. The website showcased 
+					    	a collection of programming techniques I learned while there.  The site still 
+					    	exists, but is very rudimentary compared to my capabilities today.  Still, I'll 
+					    	link to it below to show some other programming that I've done previously.</p> 
+                       <p><a href="WestonsMusings/Website/wblogger.htm">Weston's Musings</a></p>
+                 </div>
+		        </div>
+        		 <div class="c1"> 
+				 </div>
+              </div> 
+            </div>
+         <!-- End of Slide Section -->
+            <div class="row">
+	  		  <div id="slide6" class="slide">
+                <button class="toggle-button2">Share Toggle</button>
+            </div>
+	  		</div>
+     </div> 
+   </div>
+ </main>
     <script>
       //Slideout Controls
       var slideout = new Slideout({

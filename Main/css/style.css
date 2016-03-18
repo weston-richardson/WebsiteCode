@@ -5,13 +5,17 @@ body{
     height: 100%;
 }
 
+
 p {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 0.9em;
 }
 
+
+
 /* Styling for Slideout Menu */
-    .slideout-menu {
+    
+.slideout-menu {
         position: fixed;
         left: 0;
         top: 0;
@@ -24,25 +28,41 @@ p {
         display: none;
       }
 
-      .slideout-panel {
+      
+.slideout-panel {
         position:relative;
         z-index: 1;
         will-change: transform;
       }
 
-      .slideout-open,
-      .slideout-open body,
-      .slideout-open .slideout-panel {
+      
+.slideout-open,
+      
+.slideout-open body,
+      
+.slideout-open 
+.slideout-panel {
         overflow: hidden;
       }
 
-      .slideout-open .slideout-menu {
+      
+.slideout-open 
+.slideout-menu {
         display: block;
       }
       
-      .toggle-button {
+      
+.toggle-button {
           float: left;
       }
+
+
+      
+      
+panel {
+          width: 100%;
+      }
+
 
 h2 {
    font-weight: normal;
@@ -53,11 +73,16 @@ h2 {
    padding: 0;
 }
 
+
 ul {
   list-style: none;
 }
 
-.content{ margin: 0 auto; width: 960px; }
+a:link    {color:green; background-color:transparent; text-decoration:none}
+a:visited {color:pink; background-color:transparent; text-decoration:none}
+a:hover   {color:red; background-color:transparent; text-decoration:underline}
+a:active  {color:yellow; background-color:transparent; text-decoration:underline}
+
 
 #header { 
 	width: 100%; 
@@ -67,129 +92,154 @@ ul {
 	margin-top: 30px;
 }
 
-#banner { color: #fff; float: left; font-size: 30px; margin-top: 20px; color: #fff; font-weight: bold; }
+#banner { color: #fff; float: left; font-size: 1.5em; margin-top: 20px; color: #fff; font-weight: bold; }
+
 
 /* Styling for the Individual Slides */
-#slide1, #slide3{ width: 100%; }
-#slide0{
+
+.slide {
+    z-index: 1;
+}
+
+#slide0 {
 	background-color: #611;
-	height: 110px;
+	height: 25px;
 	margin: 0;
 	background-size: cover;
 }
 
-#slide1{
+#slide1 {
 	background-color: #600;
 	color: #FEB;
-	height: 200px;
+	height: 700px;
 	margin: 0;
-	padding: 50px 0 260px 0;
+	padding: 0px 0;
 	background-size: cover;
-}
+  width: 100%;}
 
-#slide2{
-	background: url('../img/slide3.jpg') 50% 0 no-repeat fixed;
-	height: 200px;
-	margin: 0 auto;
-	padding: 250px 0;
-	color: #fff;
-	background-size: cover;
-}
-
-#slide3{
-	background-color: #FC3;
-	color: #333333;
-	height: 200px;
-	margin: 0 auto;
-	overflow: hidden;
-	padding: 75px 0 250px 0;
-}
-
-#slide4{
-	background: url('../img/slide5.jpg') 50% 0 no-repeat fixed;
-	height: 200px;
-	margin: 0 auto;
-	padding: 250px 0;
-	color: #fff;
-	background-size: cover;
-}
-
-#slide5{
-	background-color: #036;
-	color: #000;
-	height: 200px;
-	padding: 200px 0;
-}
-
-#slide6 {
-	height: 25px;
-	background-color: #036;
-}
-
-.left {
-    float: left;
-    width: 47%;
-}
-
-.right{
-    float: right;
-    width: 47%;
-}
 
 #slide1 .right {
     background-color: #FEB;
 	color: #000;
-    padding: 5px;
     height: 450px;
     margin-top: -30px;
 }
 
-#slide1 img {
-    height: 460px;
-    margin-top: -30px;
-    margin-left: 55px;
+
+#slide1 p {
+    font-size: 0.8em;
 }
+
+#slide1 img {
+    height: 450px;
+    margin-top: -30px;
+    margin-left: 6%;
+}
+
+#slide2 {
+	background: url('../img/slide3.jpg') 50% 0 no-repeat fixed;
+	height: 450px;
+	margin: 0 auto;
+	color: #fff;
+	background-size: 100%;
+}
+
+#slide3 {
+	background-color: #FC3;
+	color: #333333;
+	height: 500px;
+	margin: 0;
+	background-size: cover;
+    width: 100%;}
+
 
 #slide3 .left {
     background-color: #FEB;
 	color: #000;
-    padding: 5px;
-    height: 425px;
-    margin-top: -30px;
+    height: 450px;
 }
 
 #slide3 img {
-    height: 435px;
-    width: 30em;
-    margin-top: -30px;
+    height: 450px;
+    
 }
 
-#slide5 .content {
-    margin-top: -100px;
+#slide4 {
+	background: url('../img/slide5.jpg') 50% 0 no-repeat fixed;
+	height: 450px;
+	margin: 0 auto;
+	padding: 5px 0;
+	color: #fff;
+	background-size: 100%;
 }
+
+
+
+#slide5 {
+	background-color: #036;
+	color: #FFF; 
+	height: 500px;
+	margin: 0;
+	background-size: cover;
+   width: 100%;}
+
+
+#slide5 img {
+    height: 400px;
+    width: 30em;
+   padding-top:30px; }
+
 
 #slide5 .right {
     background-color: #7887AB;
 	color: #000;
     padding: 5px;
-    height: 425px;
+    height: 450px;
 }
 
-#slide5 img {
-    height: 435px;
-    width: 30em;
+#slide6 {
+	height: 25px;
+    padding-top: 5px;
+	background-color: #036;
+}
+
+ .left {
+    float: left;
+    width: 100%;
+}
+
+.right{
+    float: right;
+    width: 100%;
+}
+
+#buffer1 {
+	height: 0px;
+	margin: 0 auto;
+	background-size: 100%;
+}
+
+#buffer2 {
+	height: 0px;
+	margin: 0 auto;
+	padding: 5px 0;
+	color: #fff;
+	background-size: 100%;
 }
 
 #menu {
     background-color: #7887AB;
 }
 
+
 /* Styling for Share Buttons */
+
 
 #resume-btn {
     background-color: #000;
     color: #fff
 }
+
 
 .fb-share-button {
   height: 15px;
@@ -198,10 +248,14 @@ ul {
   background-position-x: -1px;
   border-bottom: 1px solid #1a356e;
    }
- .fb-share-button_Text {
+ 
+.fb-share-button_Text {
   font-size: 8px ;
   height: 9px;
     }
+
 .fb_share_count .fb_share_count_right {
 float: left;
  }
+ 
+ 
