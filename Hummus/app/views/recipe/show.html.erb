@@ -1,12 +1,20 @@
-
 <h1><%= @recipe.name %></h1>
 
-<p>
-   <strong>Instructions: </strong> <%= @recipe.instructions %><br />
-   <strong>Igredients:</strong> <%= @recipe.ingredients %><br />
-   <strong>Made:</strong> <%= @recipe.made %><br />
-</p>
-
-<hr />
+        <div id="ingredients">
+            <h3>Ingredients:</h3>
+            <ul>
+                <li><%= @recipe.ingredients.gsub! ';', '\n' %></li>
+            </ul>
+        </div>
+        <br/>
+        <div id="instructions">
+        	<h3>Instructions: </h3>
+            <p><%= @recipe.instructions %></p>
+    	</div>
+        <br/>
+        <div id="image">
+            <%= image_tag @image.picture.url(:medium) %></p>
+    	</div>
 
 <%= link_to 'Back', {:action => 'list'} %>
+

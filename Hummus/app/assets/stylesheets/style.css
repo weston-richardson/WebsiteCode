@@ -1,0 +1,171 @@
+body {
+  background-color: #AA6939;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 10pt;
+  margin-top: 1em;
+  text-align: center;
+}
+
+#header
+{
+  background-color: #C76721;
+  border-color: #E36000 #8E6548 #8E6548 #E36000;
+  border-style: solid;
+  border-width: 1px;
+  color: #ffffc0;
+  margin-bottom: 1ex;
+  padding: 4px 1em;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+#body
+{
+    padding-left: 5em;
+    padding-right: 5em;
+}
+
+a
+{
+  text-decoration: none;
+  color: #ffffc0;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+#content
+{
+  background-color: #DBC081;
+  border-width: 1px;
+  margin-bottom: 1ex;
+  padding: 4px 2em;
+  margin-left: 25%;
+  margin-right: 25%;
+  padding-bottom: 30px;
+}
+
+#sideNav
+{
+  background-color: #AA8239;
+  border-color: #71644C;
+  border-style: solid;
+  border-width: 1px;
+  color: #ffffc0;
+  margin-bottom: 1ex;
+  padding: 4px 1em;
+  width: 120px;
+  float: left;
+}
+
+#slideshow
+{
+  background-color: #AA9C39;
+  border-color: #E0D05F #74691C #74691C #E0D05F;
+  border-style: solid;
+  border-width: 1px;
+  height: 20em;
+  color: #ffffc0;
+  margin-bottom: 1ex;
+  padding: 4px 1em;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+#slideshow > div { 
+    position: absolute; 
+    top: 10px; 
+    left: 10px; 
+    right: 10px; 
+    bottom: 10px; 
+}
+
+#IntroText
+{
+  background-color: #DBC081;
+  border-width: 1px;
+  margin-bottom: 1ex;
+  padding: 4px 1em;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+#recipeImage
+{
+  width: 75%;
+  color: #ffffc0;
+  margin-bottom: 1ex;
+  padding: 4px 1em;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+#ingredients
+{
+  background-color: #DBC081;
+  border-width: 1px;
+  margin-bottom: 1ex;
+  padding: 4px 1em;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+#instructions
+{
+  background-color: #DBC081;
+  border-width: 1px;
+  margin-bottom: 1ex;
+  padding: 4px 1em;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.recipeList
+{
+  background-color: #DBC081;
+  border-width: 1px;
+  margin-bottom: 1ex;
+  padding: 4px 1em;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+h3, ul, p
+{
+    text-align: left;
+}
+
+#imageList_link
+{
+    float: left;
+}
+#recipeList_link
+{
+    float: right;
+    
+}
+
+#recipeName_field
+{
+    margin-left: 40px;
+}
+
+#recipeIngredients_field
+{
+    margin-left: 3px;
+    width: 35em;
+    height: 75px;
+}
+
+#ingredientsNote
+{
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
+#recipeInstructions_field
+{
+    width: 35em;
+    height: 75px;
+}

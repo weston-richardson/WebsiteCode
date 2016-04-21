@@ -1,0 +1,16 @@
+I" (function() {
+  $(document).bind('keypress', function(e) {
+    if (e.keyCode === 13) {
+      e.preventDefault();
+      return false;
+    }
+  });
+
+  $(document).ready(function() {
+    return $('form').submit(function() {
+      return h(text).gsub(/;/, '\n');
+    });
+  });
+
+}).call(this);
+:ET

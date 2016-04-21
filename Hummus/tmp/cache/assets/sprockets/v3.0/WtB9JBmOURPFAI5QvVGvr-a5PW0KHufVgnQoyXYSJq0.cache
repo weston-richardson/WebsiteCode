@@ -1,0 +1,12 @@
+I"Ó(function() {
+  $(document).bind('keypress', function(e) {
+    var s;
+    if (e.keyCode === 13) {
+      e.preventDefault;
+      s = $(this).val();
+      return $(this).val(s + "\n");
+    }
+  });
+
+}).call(this);
+:ET

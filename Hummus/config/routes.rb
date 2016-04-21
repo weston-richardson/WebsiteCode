@@ -1,11 +1,15 @@
 Rails.application.routes.draw do
+  resources :images
+  get 'users/new'
+
+  get 'sessions/new'
+
   get 'index/about'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
-  root 'index#about'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
@@ -15,9 +19,8 @@ Rails.application.routes.draw do
 
   # Example resource route (maps HTTP verbs to controller actions automatically):
   #   resources :products
-  resources :recipe do
-    get 'recipe/list'
-  end
+  
+  # resources :recipe 
 
   # Example resource route with options:
   #   resources :products do
@@ -59,15 +62,31 @@ Rails.application.routes.draw do
   #     resources :products
   #   end
   Rails.application.routes.draw do
+  resources :images
+  get 'users/new'
+
+  get 'sessions/new'
+
+   root 'recipe#index'
+   get 'recipe/admin'
+   post 'recipe/admin'
    get 'recipe/list'
+   post 'recipe/list'
    get 'recipe/new'
-   get 'recipe/show'
-   get 'recipe/edit'
-   get 'recipe/delete'
-   get 'recipe/update'  
-   
    post 'recipe/create'
    patch 'recipe/update'
-   end
+   get 'recipe/list'
+   get 'recipe/show'
+   get 'recipe/show_admin'
+   get 'recipe/edit'
+   get 'recipe/delete'
+   get 'recipe/update'
+   get 'recipe/show_image'
+   
+   get 'image/index'
+   get 'image/new'
+   get 'image/show'
+   get 'image/edit'
+  end
 
 end

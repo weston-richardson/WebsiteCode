@@ -1,0 +1,26 @@
+<p id="notice"><%= notice %></p>
+
+<p>Administer image information here:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @images.each do |image| %>
+      <tr>
+        <td><%= link_to image.picture_file_name, image %></td>
+        <td><%= link_to 'Edit', edit_image_path(image) %></td>
+        <td><%= link_to 'Delete', image, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to "Add a new image", new_image_path, :id => "imageList_link" %>
+<%= link_to "Maintain Recipes", recipe_admin_path, :id => "recipeList_link" %>

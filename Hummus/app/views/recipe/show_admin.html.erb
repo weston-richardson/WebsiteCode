@@ -1,0 +1,19 @@
+<h1><%= @recipe.name %></h1>
+
+
+        <div id="ingredients">
+            <h3>Ingredients:</h3>
+            <%= line_break(h(@recipe.ingredients)) %>
+        </div>
+        <br/>
+        <div id="instructions">
+        	<h3>Instructions: </h3>
+            <%= line_break(h(@recipe.instructions)) %>
+    	</div>
+        <br/>
+        <div id="image">
+            <%= image_tag @image.picture.url(:medium) %>
+    	</div>
+
+<%= link_to 'Back', {:action => 'admin'} %>
+

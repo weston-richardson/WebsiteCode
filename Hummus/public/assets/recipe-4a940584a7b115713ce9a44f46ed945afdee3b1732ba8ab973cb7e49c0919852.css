@@ -1,0 +1,150 @@
+/* line 4, C:/Users/Dave/Documents/Website/Website-2016/hummus/app/assets/stylesheets/recipe.scss */
+body {
+  background-color: #AA6939;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 10pt;
+  margin-top: 1em;
+  text-align: center;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+/* line 14, C:/Users/Dave/Documents/Website/Website-2016/hummus/app/assets/stylesheets/recipe.scss */
+#header {
+  background-color: #C76721;
+  border-color: #E36000 #8E6548 #8E6548 #E36000;
+  border-style: solid;
+  border-width: 1px;
+  color: #ffffc0;
+  margin-bottom: 1ex;
+  padding: 4px 1em;
+}
+
+/* line 25, C:/Users/Dave/Documents/Website/Website-2016/hummus/app/assets/stylesheets/recipe.scss */
+#body {
+  padding-left: 5em;
+  padding-right: 5em;
+}
+
+/* line 31, C:/Users/Dave/Documents/Website/Website-2016/hummus/app/assets/stylesheets/recipe.scss */
+a {
+  text-decoration: none;
+  color: #ffffc0;
+}
+
+/* line 38, C:/Users/Dave/Documents/Website/Website-2016/hummus/app/assets/stylesheets/recipe.scss */
+#sideNav {
+  background-color: #AA8239;
+  border-color: #71644C;
+  border-style: solid;
+  border-width: 1px;
+  color: #ffffc0;
+  margin-bottom: 1ex;
+  padding: 4px 1em;
+  width: 120px;
+  float: left;
+}
+
+/* line 51, C:/Users/Dave/Documents/Website/Website-2016/hummus/app/assets/stylesheets/recipe.scss */
+#sideNav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 200px;
+}
+
+/* line 58, C:/Users/Dave/Documents/Website/Website-2016/hummus/app/assets/stylesheets/recipe.scss */
+#sideNav li a {
+  display: block;
+  padding: 8px 0 8px 16px;
+  text-decoration: none;
+}
+
+/* line 64, C:/Users/Dave/Documents/Website/Website-2016/hummus/app/assets/stylesheets/recipe.scss */
+#btmNav {
+  background-color: #C76721;
+  border-color: #E36000 #8E6548 #8E6548 #E36000;
+  border-style: solid;
+  border-width: 1px;
+  color: #ffffc0;
+  margin-bottom: 1ex;
+  padding: 4px 1em;
+}
+
+/* line 75, C:/Users/Dave/Documents/Website/Website-2016/hummus/app/assets/stylesheets/recipe.scss */
+#slideshow {
+  background-color: #AA9C39;
+  border-color: #E0D05F #74691C #74691C #E0D05F;
+  border-style: solid;
+  border-width: 1px;
+  height: 20em;
+  color: #ffffc0;
+  margin-bottom: 1ex;
+  padding: 4px 1em;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+/* line 89, C:/Users/Dave/Documents/Website/Website-2016/hummus/app/assets/stylesheets/recipe.scss */
+#slideshow > div {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  right: 10px;
+  bottom: 10px;
+}
+
+/* line 97, C:/Users/Dave/Documents/Website/Website-2016/hummus/app/assets/stylesheets/recipe.scss */
+#IntroText {
+  background-color: #DBC081;
+  border-width: 1px;
+  margin-bottom: 1ex;
+  padding: 4px 1em;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+/* line 107, C:/Users/Dave/Documents/Website/Website-2016/hummus/app/assets/stylesheets/recipe.scss */
+#recipeImage {
+  width: 75%;
+  color: #ffffc0;
+  margin-bottom: 1ex;
+  padding: 4px 1em;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+/* line 117, C:/Users/Dave/Documents/Website/Website-2016/hummus/app/assets/stylesheets/recipe.scss */
+#ingredients {
+  background-color: #DBC081;
+  border-width: 1px;
+  margin-bottom: 1ex;
+  padding: 4px 1em;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+/* line 127, C:/Users/Dave/Documents/Website/Website-2016/hummus/app/assets/stylesheets/recipe.scss */
+#instructions {
+  background-color: #DBC081;
+  border-width: 1px;
+  margin-bottom: 1ex;
+  padding: 4px 1em;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+/* line 137, C:/Users/Dave/Documents/Website/Website-2016/hummus/app/assets/stylesheets/recipe.scss */
+.recipeList {
+  background-color: #DBC081;
+  border-width: 1px;
+  margin-bottom: 1ex;
+  padding: 4px 1em;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+/* line 147, C:/Users/Dave/Documents/Website/Website-2016/hummus/app/assets/stylesheets/recipe.scss */
+h3, ul, p {
+  text-align: left;
+}
